@@ -1,0 +1,15 @@
+.character-card {
+    display: flex;
+    padding: 24px;
+    width: 500px;
+    border: 1px solid gray;
+    box-shadow: gray;
+}
+
+.character-card__img {
+    width: 80%;
+}
+
+.character-card__title {
+    padding: 12px;
+}
