@@ -1,11 +1,16 @@
 import './App.css';
+import Header from './components/Header'
+import CharacterCard from "./components/CharacterCard";
+import characterResponse from './characters-response.json'
 
 function App() {
-  return (
-    <div>
-      <h1>My App</h1>
-    </div>
-  );
+  const characters = characterResponse.results
+
+  return <div>
+    <Header title="Character Gallery"/>
+    <CharacterCard character={characters[0]} />
+    <CharacterCard character={characters[1]} />
+  </div>
 }
 
 export default App;
